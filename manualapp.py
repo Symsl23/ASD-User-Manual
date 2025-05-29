@@ -330,7 +330,7 @@ def show_user_manual(sub_page=None):
 
         i) Go to the "Register Face" tab.
         """)
-        st.image("register face.jpg", width=700)
+        st.image("images/register face.jpg", width=700)
 
         st.markdown("""
         ii) Fill in:
@@ -339,12 +339,12 @@ def show_user_manual(sub_page=None):
         - Email
         - Phone Number
         """)
-        st.image("fill in.jpg", width=700)
+        st.image("images/fill in.jpg", width=700)
 
         st.markdown("""
         iii) Capture your face using the camera.
         """)
-        st.image("capture face.jpg", width=700)
+        st.image("images/capture face.jpg", width=700)
 
         st.markdown("""iv) Click "Register".""")
 
@@ -372,17 +372,17 @@ def show_user_manual(sub_page=None):
 
         i) Go to the "Submit Attendance" tab.
         """)
-        st.image("submit attendance.jpg", width=700)
+        st.image("images/submit attendance.jpg", width=700)
 
         st.markdown("""
         ii) Select your class from the dropdown.
         """)
-        st.image("select class.jpg", width=700)
+        st.image("images/select class.jpg", width=700)
 
         st.markdown("""
         iii) Capture your face using the camera.
         """)
-        st.image("capture face submit.jpg", width=700)
+        st.image("images/capture face submit.jpg", width=700)
             
         st.markdown("""
         ✅ If your face is recognized:
@@ -406,17 +406,17 @@ def show_user_manual(sub_page=None):
 
         i) Go to the "Student Performance" tab.
         """)
-        st.image("student performance.jpg", width=700)
+        st.image("images/student performance.jpg", width=700)
             
         st.markdown("""
         ii) Select your class.
         """)
-        st.image("select class performance.jpg", width=700)
+        st.image("images/select class performance.jpg", width=700)
             
         st.markdown("""
         iii) Choose your name + student ID.
         """)
-        st.image("select student.jpg", width=700)
+        st.image("images/select student.jpg", width=700)
 
         st.markdown("""
         iv) View:
@@ -432,7 +432,7 @@ def show_user_manual(sub_page=None):
 
         ⚠️ If attendance is < 75%, you'll see a warning.
         """)
-        st.image("view performance.jpg", width=700)
+        st.image("images/view performance.jpg", width=700)
 
     elif sub_page == "For Admins":
         st.header("2. 🛠️ For Admins")
@@ -440,12 +440,12 @@ def show_user_manual(sub_page=None):
         st.markdown("""
         1. Go to the "Admin Panel" tab.
         """)
-        st.image("admin panel.jpg", width=700)
+        st.image("images/admin panel.jpg", width=700)
 
         st.markdown("""
         2. Enter the admin code: admin123.
         """)
-        st.image("admin login.jpg", width=700)
+        st.image("images/admin login.jpg", width=700)
 
         st.markdown("---")
 
@@ -455,14 +455,14 @@ def show_user_manual(sub_page=None):
         - Type a new class name.
         - Click "Add Class" to create a Drive folder and track attendance.
         """)
-        st.image("add class.jpg", width=700)
+        st.image("images/add class.jpg", width=700)
         
         st.markdown("""
         ➖ Remove Class
         - Select an existing class to remove from the system.
         - WARNING: This action cannot be undone.
         """)
-        st.image("remove class.jpg", width=700)
+        st.image("images/remove class.jpg", width=700)
 
         st.markdown("---")
 
@@ -472,7 +472,7 @@ def show_user_manual(sub_page=None):
 
         b) Pick a date range.
         """)
-        st.image("attendance dashboard.jpg", width=700)
+        st.image("images/attendance dashboard.jpg", width=700)
         
         st.markdown("""
         c) View:
@@ -482,8 +482,8 @@ def show_user_manual(sub_page=None):
         - Top 3 attendees.
         - Attendance pie chart.
         """)
-        st.image("attendance dashboard2.jpg", width=700)
-        st.image("attendance dashboard3.jpg", width=700)
+        st.image("images/attendance dashboard2.jpg", width=700)
+        st.image("images/attendance dashboard3.jpg", width=700)
 
         st.markdown("---")
 
@@ -493,7 +493,7 @@ def show_user_manual(sub_page=None):
         - Choose a date range.
         - Click "Download CSV" to export data.
         """)
-        st.image("download attendance data.jpg", width=700)
+        st.image("images/download attendance data.jpg", width=700)
 
         st.markdown("---")
 
