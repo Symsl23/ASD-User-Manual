@@ -67,12 +67,12 @@ def main():
                 st.session_state.active_installation_sub_category = None # Reset for other categories
 
     # About Dropdown
-    with st.sidebar.expander("ℹ️ About"):
-        for key, display_name in about_options.items():
-            if st.button(display_name, key=f"about_{key}"):
-                st.session_state.active_page_category = "About"
-                st.session_state.active_sub_page = key
-                st.session_state.active_installation_sub_category = None # Reset for other categories
+    #with st.sidebar.expander("ℹ️ About"):
+    #    for key, display_name in about_options.items():
+    #        if st.button(display_name, key=f"about_{key}"):
+    #            st.session_state.active_page_category = "About"
+    #            st.session_state.active_sub_page = key
+    #            st.session_state.active_installation_sub_category = None # Reset for other categories
 
     # --- Display Content ---
     # With layout="centered" and the CSS, you don't need st.columns([1, 3, 1]) for centering.
@@ -170,7 +170,6 @@ def show_installation_guide(installation_sub_category=None):
             * **Solution:** Activate your virtual environment and install the missing package: `pip install some_package`. Then, try running the app again.
         * **Streamlit command not found:**
             * **Solution:** Ensure Streamlit is installed correctly and that its installation directory is in your system's PATH. If using a virtual environment, make sure it's activated.
-        * *(Add more common issues and solutions specific to your app here.)*
         """)
 
 
@@ -330,7 +329,7 @@ def show_user_manual(sub_page=None):
 
         i) Go to the "Register Face" tab.
         """)
-        st.image("images/register face.jpg", width=700)
+        st.image("register face.jpg", width=700)
 
         st.markdown("""
         ii) Fill in:
@@ -339,12 +338,12 @@ def show_user_manual(sub_page=None):
         - Email
         - Phone Number
         """)
-        st.image("images/fill in.jpg", width=700)
+        st.image("fill in.jpg", width=700)
 
         st.markdown("""
         iii) Capture your face using the camera.
         """)
-        st.image("images/capture face.jpg", width=700)
+        st.image("capture face.jpg", width=700)
 
         st.markdown("""iv) Click "Register".""")
 
@@ -372,17 +371,17 @@ def show_user_manual(sub_page=None):
 
         i) Go to the "Submit Attendance" tab.
         """)
-        st.image("images/submit attendance.jpg", width=700)
+        st.image("submit attendance.jpg", width=700)
 
         st.markdown("""
         ii) Select your class from the dropdown.
         """)
-        st.image("images/select class.jpg", width=700)
+        st.image("select class.jpg", width=700)
 
         st.markdown("""
         iii) Capture your face using the camera.
         """)
-        st.image("images/capture face submit.jpg", width=700)
+        st.image("capture face submit.jpg", width=700)
             
         st.markdown("""
         ✅ If your face is recognized:
@@ -406,17 +405,17 @@ def show_user_manual(sub_page=None):
 
         i) Go to the "Student Performance" tab.
         """)
-        st.image("images/student performance.jpg", width=700)
+        st.image("student performance.jpg", width=700)
             
         st.markdown("""
         ii) Select your class.
         """)
-        st.image("images/select class performance.jpg", width=700)
+        st.image("select class performance.jpg", width=700)
             
         st.markdown("""
         iii) Choose your name + student ID.
         """)
-        st.image("images/select student.jpg", width=700)
+        st.image("select student.jpg", width=700)
 
         st.markdown("""
         iv) View:
@@ -432,7 +431,7 @@ def show_user_manual(sub_page=None):
 
         ⚠️ If attendance is < 75%, you'll see a warning.
         """)
-        st.image("images/view performance.jpg", width=700)
+        st.image("view performance.jpg", width=700)
 
     elif sub_page == "For Admins":
         st.header("2. 🛠️ For Admins")
@@ -440,12 +439,12 @@ def show_user_manual(sub_page=None):
         st.markdown("""
         1. Go to the "Admin Panel" tab.
         """)
-        st.image("images/admin panel.jpg", width=700)
+        st.image("admin panel.jpg", width=700)
 
         st.markdown("""
         2. Enter the admin code: admin123.
         """)
-        st.image("images/admin login.jpg", width=700)
+        st.image("admin login.jpg", width=700)
 
         st.markdown("---")
 
@@ -455,14 +454,14 @@ def show_user_manual(sub_page=None):
         - Type a new class name.
         - Click "Add Class" to create a Drive folder and track attendance.
         """)
-        st.image("images/add class.jpg", width=700)
+        st.image("add class.jpg", width=700)
         
         st.markdown("""
         ➖ Remove Class
         - Select an existing class to remove from the system.
         - WARNING: This action cannot be undone.
         """)
-        st.image("images/remove class.jpg", width=700)
+        st.image("remove class.jpg", width=700)
 
         st.markdown("---")
 
@@ -472,7 +471,7 @@ def show_user_manual(sub_page=None):
 
         b) Pick a date range.
         """)
-        st.image("images/attendance dashboard.jpg", width=700)
+        st.image("attendance dashboard.jpg", width=700)
         
         st.markdown("""
         c) View:
@@ -482,8 +481,8 @@ def show_user_manual(sub_page=None):
         - Top 3 attendees.
         - Attendance pie chart.
         """)
-        st.image("images/attendance dashboard2.jpg", width=700)
-        st.image("images/attendance dashboard3.jpg", width=700)
+        st.image("attendance dashboard2.jpg", width=700)
+        st.image("attendance dashboard3.jpg", width=700)
 
         st.markdown("---")
 
@@ -493,7 +492,7 @@ def show_user_manual(sub_page=None):
         - Choose a date range.
         - Click "Download CSV" to export data.
         """)
-        st.image("images/download attendance data.jpg", width=700)
+        st.image("download attendance data.jpg", width=700)
 
         st.markdown("---")
 
